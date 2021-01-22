@@ -4,6 +4,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpSession;
+
 import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,11 +26,10 @@ public class LoginController {
 	
 	
 	//xml과 java연결
-		@Autowired
-		private SqlSession sqlSession;
-
+	@Autowired
+	private SqlSession sqlSession;
+	HttpSession session;
 		
-	
 	//로그인화면 연결
 	@RequestMapping("/login_view")
 	public String login_view(Model model) {
@@ -36,8 +37,15 @@ public class LoginController {
 	}
 	
 	
+	//로그인 
+	@RequestMapping("/login")
+	public String login(Model model) {
+		
+		
+		return "main";		
+	}
 	
-	
+
 	
 	
 	
