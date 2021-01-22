@@ -1,5 +1,7 @@
 package com.spring.camping.admin.userinfodelete;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,17 +16,18 @@ public class AdminUserDeleteController {
 	@Autowired
 	private SqlSession sqlSession;
 	
+	
 	/**
 	 * 
 	 */
-	@RequestMapping("user_delte")
-	public String admin_product_list(Model model) {
+	@RequestMapping("userInfoDelete")
+	public String admin_product_list(HttpServletRequest request, Model model) {
 		System.out.println("admin_order_list()");
-		AdminOrderList_IDao dao = sqlSession.getMapper(AdminOrderList_IDao.class);
-		model.addAttribute("orderlist", dao.listDao());
 		
-		
-		return "admin/admin_order_list";
+		AdminUserDelete_IDao dao = sqlSession.getMapper(AdminUserDelete_IDao.class);
+		dao.adminuserdeletedao(request.getParameter("userId"));
+				
+		return "redirect:userinfo";
 	}
 	
 	

@@ -125,7 +125,7 @@ a {
 				<td>${user.zipNo}${user.roadAddrPart1}${user.addrDetail}</td>
 				<td>${user.userEmail}</td>
 
-				<td><a href="userInfoDelete.do?userId=${user.userId}">삭제</a></td>
+				<td><a href="admin/userInfoDelete?userId=${user.userId}">삭제</a></td>
 
 
 			</tr>
