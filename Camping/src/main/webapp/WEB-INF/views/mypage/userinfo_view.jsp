@@ -67,7 +67,7 @@ a {
 </style>
 
 <body>
-<%@include file="./header/header.jsp"%>
+<%@include file="../header/header.jsp"%>
 
 	<c:if test="${delete == 0 }">
 		<script>

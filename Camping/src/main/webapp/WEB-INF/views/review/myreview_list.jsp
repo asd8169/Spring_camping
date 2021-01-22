@@ -61,7 +61,7 @@ a {
 </style>
 
 <body>
-<%@include file="./header/header.jsp"%>
+<%@include file="../header/header.jsp"%>
 	<div>
 		<form action="myreviewlist.do" id="checklist">
 			<div class="detail_title">

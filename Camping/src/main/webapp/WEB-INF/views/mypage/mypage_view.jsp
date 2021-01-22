@@ -62,7 +62,7 @@ h2 {
 }
 </style>
 <body>
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 
 	<div class="mypage_wrap">
 		<div class="aside">
