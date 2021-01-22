@@ -24,10 +24,7 @@ public class RegisterProductController {
 	private SqlSession sqlSession;
 	
 	ICommand command = null;
-//
-//	HttpServletRequest request;
-//	HttpSession session =request.getSession();
-//	
+
 //	// 상품 등록 폼 
 	@RequestMapping("product_write")
 	public String WriteForm() {
@@ -45,12 +42,21 @@ public class RegisterProductController {
 		command = new ProductFileUploadCommand();
 		command.execute(sqlSession, request, model, session);
 		
+		System.out.println("업로드 커맨드 끝남 ");
+		
+		String pName = (String) session.getAttribute("pName");
+		String pCategory = (String) session.getAttribute("pCategory");
+		String pPrice = (String) session.getAttribute("pPrice");
+		String pFile = (String) session.getAttribute("pFile");
+		String pSubFile = (String) session.getAttribute("pSubFile");
+		String pStock = (String) session.getAttribute("pStock");
 		
 		IDao dao = sqlSession.getMapper(IDao.class);
-		dao.registerProductDao(request.getParameter("pName"), request.getParameter("pCategory"), request.getParameter("pPrice"), request.getParameter("pFile"), request.getParameter("pSubFile"), request.getParameter("pStock"));
+		dao.registerProductDao(pName, pCategory, pPrice, pFile, pSubFile, pStock);
+	
+		System.out.println(request.getParameter("pName"));
 		
-		
-		return "redirect:admin/admin_product_list";
+		return "redirect:admin_Product_list";
 		}
 	}
 	

@@ -24,7 +24,8 @@ public class ProductFileUploadCommand implements ICommand {
 	public void execute(SqlSession sqlSession, HttpServletRequest request, Model model, HttpSession session)
 			throws ServletException, IOException {
 		
-		String uploadPath = request.getSession().getServletContext().getRealPath("/pimage/");
+		System.out.println("업로드 커맨드 들어옴 ");
+		String uploadPath = request.getSession().getServletContext().getRealPath("/productimage/");
 		int max = 1024 * 1024 * 10;
 		String encoding = "UTF-8";
 		System.out.println(uploadPath);
@@ -67,9 +68,12 @@ public class ProductFileUploadCommand implements ICommand {
 				String pPrice = multi.getParameter("pPrice");			
 				String pStock = multi.getParameter("pStock");	
 				
+				
 				session.setAttribute("pFile", filename);
+				System.out.println(filename);
 				session.setAttribute("pSubFile", filename2);
 				session.setAttribute("pName", pName);
+				System.out.println(pName);
 				session.setAttribute("pCategory", pCategory);
 				session.setAttribute("pPrice", pPrice);
 				session.setAttribute("pStock", pStock);
@@ -77,6 +81,7 @@ public class ProductFileUploadCommand implements ICommand {
 				} catch (Exception e) {
 			e.getStackTrace();
 			System.out.println(e);
+			System.out.println("멀티 실패");
 			
 		} // 업로드 종료
 

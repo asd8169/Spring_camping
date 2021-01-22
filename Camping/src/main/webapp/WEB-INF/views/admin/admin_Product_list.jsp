@@ -88,7 +88,7 @@ text-align: center;
 			<!-- <form action="plist_modify.do?" method="get"> -->
 			<tr>
 			<td><input type="text" readonly="readonly" name="pNo" value="${productdto.pNo}" style = "border: none;"></td>
-			<td><img src="${pageContext.request.contextPath}/pimage/${productdto.pFile}" width="50"/></td><!-- 상품 이미지 -->
+			<td><img src="${pageContext.request.contextPath}/productimage/${productdto.pFile}" width="50"/></td><!-- 상품 이미지 -->
 			<td><input type="text" name="pName" value="${productdto.pName }"style = "border: none;"> </td>
 			<td><input type="text" name="pCategory" value="${productdto.pCategory }" style = "border: none;"></td>
 			<td><input type="text" name="pStock" value="${productdto.pStock }" style = "border: none;"></td>
