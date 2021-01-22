@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.spring.camping.admin.orderlist.AdminOrderList_IDao">
+	<select id="listDao" resultType="com.spring.camping.admin.orderlist.COrderDto">
+		SELECT ORDERNO, PRODUCT_PNO, PNAME, ORDERADDRESS, ORDERQUANTITY, PPRICE*ORDERQUANTITY, ORDERDATE, USERID FROM CAMPING.ORDER O, PRODUCT P, USERINFO U WHERE PRODUCT_PNO = PNO AND USERINFO_USERNO = USERNO
+	</select>
+	
+</mapper>
