@@ -58,7 +58,7 @@ a {
 	text-decoration: none;
 }
 </style>
-
+	
 <body>
     <%@include file="../header/header.jsp"%> 
 	<div>
