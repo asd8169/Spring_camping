@@ -211,7 +211,7 @@ a {
 </style>
 <body onload="init();">
 
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 	<div class="product_ptwrap"><img src="${pageContext.request.contextPath}/pimage/${content_view.pFile}" width="300"/></div>
 	<br>
 	<div class="product_ptwrap"><img src="${pageContext.request.contextPath}/pimage/${content_view.pSubFile}" width="400"/></div>

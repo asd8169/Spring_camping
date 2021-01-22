@@ -65,7 +65,7 @@ a {
 </style>
 	
 	<body>
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 		<form action="regiseter_review.do" method="post" enctype="multipart/form-data">
 			<div>
 			<div class="detail_title">

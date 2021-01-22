@@ -67,7 +67,7 @@ a {
 
 </head>
 <body class="align">
-	<%@include file="./header/header2.jsp"%>
+	<%@include file="../header/header2.jsp"%>
 	<%-- <c:if test="${sessionID eq userId }">
 		<script>
 			alert("이미 로그인 중입니다.");

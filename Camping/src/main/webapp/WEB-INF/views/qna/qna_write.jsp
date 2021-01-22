@@ -53,7 +53,7 @@ a {
 
 <body>
 
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 
 	<form action="qna_write.do" method="get">
 		<table>

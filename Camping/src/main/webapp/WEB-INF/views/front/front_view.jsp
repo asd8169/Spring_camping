@@ -53,7 +53,7 @@ a {
 <body>
 
 
-	<%@include file="./header/header2.jsp"%>
+	<%@include file="../header/header2.jsp"%>
 	
 
 

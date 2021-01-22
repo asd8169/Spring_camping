@@ -273,7 +273,7 @@ function inputIdChk(){
 
 
 <body>
-	<%@include file="./header/header2.jsp"%>
+	<%@include file="../header/header2.jsp"%>
 	<h2 style="text-align: center; margin-top: 100px;">SIGN UP</h2>
 
 

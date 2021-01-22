@@ -281,7 +281,7 @@ return true; }
 
 
 <body>
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 	<h2 style="text-align: center; margin-top: 100px;">MYPAGE EDIT</h2>
 	<div class="container">
 	

@@ -56,7 +56,7 @@ a {
 	</head>
 	
 	<body>
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 		<div>
 			<form action="myreview_modify.do" method="get">
 			<div class="detail_title">

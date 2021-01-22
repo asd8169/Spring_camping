@@ -78,7 +78,7 @@ a {
 			</script>
 	</c:if>  --%>
 
-<%@include file="./header/header.jsp"%>
+<%@include file="../header/header.jsp"%>
 
 
 	<script>

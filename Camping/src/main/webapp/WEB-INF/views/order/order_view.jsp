@@ -185,7 +185,7 @@ li {
 </style>
 <body>
 
-	<%@include file="./header/header.jsp"%>
+	<%@include file="../header/header.jsp"%>
 		<form name="form" name="form" id="form" onsubmit="return chk()"
 			action="kakaopay.jsp" method="get">
 	<div class="detail_title">

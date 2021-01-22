@@ -59,7 +59,7 @@ a {
 <body>
 
 	<table>
-		<%@include file="./header/header.jsp"%>
+		<%@include file="../header/header.jsp"%>
 		<!-- post,get 상관없이 action.do가 실행 -->
 		<form action="qnamodify.do" method="get">
 			<input type="hidden" value="${qna_view.qnaNo }" name="qnaNo">
