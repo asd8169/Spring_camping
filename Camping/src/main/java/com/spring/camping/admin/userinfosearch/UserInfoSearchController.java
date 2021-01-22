@@ -30,8 +30,8 @@ public class UserInfoSearchController {
 	@RequestMapping("userinfo")
 	public String userinfo(Model model) {
 		
-		CUserInfoDao dao = sqlSession.getMapper(CUserInfoDao.class);
-		model.addAttribute("userInfoList", dao.selectUserInfo());
+		CUserInfoSearchDao dao = sqlSession.getMapper(CUserInfoSearchDao.class);
+		model.addAttribute("userInfoList", dao.search());
 		return "admin/userinfo_view";		
 		
 	}
