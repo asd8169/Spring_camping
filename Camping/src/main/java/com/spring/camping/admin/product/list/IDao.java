@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public interface IDao {
 
+	// Admin Product List
 	public ArrayList<AdminProductlistDto> productlistDao();
 	
 }
