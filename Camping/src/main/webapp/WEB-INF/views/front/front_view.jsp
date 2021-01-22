@@ -9,7 +9,7 @@
 </head>
 <style>
 body {
-	background-image: url('./image/homecamping.png');
+	background-image: url('/camping/mainimage/homecamping.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -63,11 +63,11 @@ a {
 	
 	
 		<p id="title">
-			<a href="login_view.jsp" style="font-weight: bold; color: #fff;"> L&nbsp; U&nbsp; M&nbsp; O&nbsp; S</a>
+			<a href="login_view" style="font-weight: bold; color: #fff;"> L&nbsp; U&nbsp; M&nbsp; O&nbsp; S</a>
 		</p>
 		
 		<p class="mainTexBut">
-			<a href="login_view.jsp" style="font-weight: bold; color: #fff;">Login</a>
+			<a href="login_view" style="font-weight: bold; color: #fff;">Login</a>
 		</p>
 		
 		<p class="mainTexBut">
