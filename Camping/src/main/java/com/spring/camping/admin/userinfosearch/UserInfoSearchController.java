@@ -1,4 +1,4 @@
-package com.spring.camping.admin.userinfoselect;
+package com.spring.camping.admin.userinfosearch;
 
 
 import org.apache.ibatis.session.SqlSession;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Handles requests for the application home page.
  */
 @Controller
-public class UserInfoController {
+public class UserInfoSearchController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(UserInfoController.class);
+	private static final Logger logger = LoggerFactory.getLogger(UserInfoSearchController.class);
 	
 	
 	
