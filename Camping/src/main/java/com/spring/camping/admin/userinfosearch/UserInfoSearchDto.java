@@ -1,8 +1,8 @@
-package com.spring.camping.admin.userinfoselect;
+package com.spring.camping.admin.userinfosearch;
 
 import java.sql.Timestamp;
 
-public class CUserInfoDto {
+public class UserInfoSearchDto {
 	
 	String userNo;
 	String userId;
@@ -16,7 +16,7 @@ public class CUserInfoDto {
 	
 	
 	
-	public CUserInfoDto() {
+	public UserInfoSearchDto() {
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -25,7 +25,7 @@ public class CUserInfoDto {
 	
 	
 	
-	public CUserInfoDto(String userNo, String userId, String userPw, String userName, String userTelno, String zipNo,
+	public UserInfoSearchDto(String userNo, String userId, String userPw, String userName, String userTelno, String zipNo,
 			String roadAddrPart1, String addrDetail, String userEmail) {
 		super();
 		this.userNo = userNo;
