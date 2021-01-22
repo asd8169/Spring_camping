@@ -27,11 +27,12 @@ public class UserInfoSearchController {
 		
 	
 	//회원리스트
-	@RequestMapping("userinfo")
-	public String userinfo(Model model) {
-		
+	@RequestMapping("userinfoSearch")
+	public String userinfo(Model model,String select, String content) {
+		System.out.println(select);
+		System.out.println(content);
 		CUserInfoSearchDao dao = sqlSession.getMapper(CUserInfoSearchDao.class);
-		model.addAttribute("userInfoList", dao.search());
+		model.addAttribute("userInfoList", dao.search(select,content));
 		return "admin/userinfo_view";		
 		
 	}
@@ -50,3 +51,4 @@ public class UserInfoSearchController {
 	
 	
 }
+ 

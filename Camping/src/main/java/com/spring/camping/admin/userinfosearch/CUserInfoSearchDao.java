@@ -5,6 +5,6 @@ import java.util.ArrayList;
 
 public interface CUserInfoSearchDao {
 
-	public ArrayList<UserInfoSearchDto> search();
+	public ArrayList<CUserInfoSearchDto> search(String select, String content);
 	
 }
