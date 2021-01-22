@@ -15,7 +15,7 @@ import org.springframework.ui.Model;
 
 public interface ICommand {
 
-	public void execute(SqlSession sqlSession, Model model, HttpSession session) throws ServletException, IOException;
+	public void execute(SqlSession sqlSession, HttpServletRequest request, Model model, HttpSession session) throws ServletException, IOException;
 	
 
 	
