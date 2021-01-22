@@ -133,7 +133,7 @@ a {
 	<div class="grid__container">
 	 -->
 	
-	<form action="login.do">
+	<form action="login">
 
 	<table>
 
@@ -154,48 +154,6 @@ a {
 				<td><input type="submit" name="LoginBtn" value="Login"
 					style="width: 300px; height: 50px; background: black; color: #fff; font-weight: bold;"></td>
 			</tr>
-			<tr>
-				<!-- 카카오 로그인 버튼 -->
-				<a id="kakao-login-btn"></a>
-			</tr>
-			<script type='text/javascript'>
-		// 발급받은 Javascript 키
-		Kakao.init('f736659342f515d30c348f6055e25108');
-
-		// 카카오 로그인 버튼을 생성합니다.
-		Kakao.Auth.createLoginButton({
-			container : '#kakao-login-btn',
-			success : function(authObj) {
-
-				// 로그인 성공시, API를 호출합니다.
-				Kakao.API.request({
-					url : '/v1/user/me',
-					success : function(res) {
-						console.log(res);
-
-						var userID = res.id; //유저의 카카오톡 고유 id
-						var userEmail = res.kaccount_email; //유저의 이메일
-						var userNickName = res.properties.nickname; //유저가 등록한 별명
-
-						var html = '<BR>' + userID + userEmail + userNickName;
-						
-						html;
-						
-						console.log(userID);
-						console.log(userEmail);
-						console.log(userNickName);
-					},
-					fail : function(error) {
-						alert(JSON.stringify(error));
-					}
-				});
-			},
-			fail : function(err) {
-				alert(JSON.stringify(err));
-			}
-		});
-	</script> 
-
 			<tr>
 
 				<td><p style="font-weight: bold; color:gray;">

@@ -10,7 +10,4 @@
 		select @ROWNUM := @ROWNUM + 1 as rno, r.* from review r, (select @rownum :=0) tmp where order_product_pNo = #{param1} ORDER BY rno LIMIT ?, 3
 	</select>
 
-
-
-
 </mapper>
