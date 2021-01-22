@@ -6,10 +6,11 @@
 
 <%
 	String userId = request.getParameter("userId");
-	CUserInfoDao dao = CUserInfoDao.getInstance();
+	CUserInfoSearchDao dao = CUserInfoSearchDao.getInstance();
 	boolean result = dao.checkId(userId);
 	
-	if(result){ %>
+	if(result){
+%>
 		<center>
 		<br><br>
 		</center>

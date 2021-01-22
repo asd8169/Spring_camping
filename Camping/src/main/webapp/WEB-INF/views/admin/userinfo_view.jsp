@@ -82,16 +82,16 @@ a {
 	</c:if>
 
 	<div class="search_wrap">
-		<form action="userinfoSearch.do">
+		<form action="userinfoSearch">
 
 
 			검색 선택 : <select name="select">
 
-				<option value="userId" selected="selected">ID</option>
-				<option value="userName">Name</option>
-				<option value="userTelno">Telno</option>
+				<option value="USERID" selected="selected">ID</option>
+				<option value="USERNAME">Name</option>
+				<option value="USERTELNO">Tel</option>
 				<!-- <option value="Address">Address</option> -->
-				<option value="userEmail">Email</option>
+				<option value="USEREMAIL">Email</option>
 
 			</select>&nbsp;&nbsp;&nbsp; <input type="text" name="content" size="30" /> <input
 				type="submit" value="검색">
