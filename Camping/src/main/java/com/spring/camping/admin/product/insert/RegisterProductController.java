@@ -46,6 +46,8 @@ public class RegisterProductController {
 		command.execute(sqlSession, request, model, session);
 		
 		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		dao.registerProductDao(request.getParameter("pName"), request.getParameter("pCategory"), request.getParameter("pPrice"), request.getParameter("pFile"), request.getParameter("pSubFile"), request.getParameter("pStock"));
 		
 		
 		return "redirect:admin/admin_product_list";

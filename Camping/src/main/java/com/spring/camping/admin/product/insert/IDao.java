@@ -4,6 +4,5 @@ package com.spring.camping.admin.product.insert;
 
 public interface IDao {
 
-	public void writeDao(String userNo, String reviewNo, String orderNo, String productNo, String reviewContent, String reviewFile, String reviewDate);
-	
+	public void registerProductDao(String pName, String pCategory, String pPrice, String pFile, String pSubFile, String pStock);
 }
