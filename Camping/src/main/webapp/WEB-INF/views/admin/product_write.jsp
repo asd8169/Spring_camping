@@ -77,7 +77,7 @@ a {
 	
 	<body>
 		<div>
-		<form action="register_product.do" method="post" enctype="multipart/form-data">
+		<form action="register" method="post" enctype="multipart/form-data">
 		<table>
 			<tr>
 			<td><H3>PRODUCT</H3></td>
