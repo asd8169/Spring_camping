@@ -16,7 +16,6 @@ import com.spring.camping.fileupload.ProductFileUploadCommand;
 import com.spring.camping.icommand.ICommand;
 
 @Controller
-@RequestMapping("admin/")
 public class RegisterProductController {
 	
 	//xml과 java연결
